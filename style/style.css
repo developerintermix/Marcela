@@ -1,9 +1,18 @@
+h1{
+    font-family: 'Big Shoulders Display';
+}
+
+p{
+    font-family: 'Lexend Deca';
+}
+
 .attribution a{
-    color: brown;
+    color: rgb(143, 118, 193);
     text-decoration: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 a:hover{
     font-style: italic;
+    color: rgb(66, 44, 110);
 }
