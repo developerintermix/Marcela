@@ -6,8 +6,7 @@
 }
 .cards__item {
   background-color: white;
-  padding: 40px;
-  flex-grow: 1;
+  padding: 45px;
   flex: 1 1 200px; /*prevents the card changing size despite screen size*/
   max-width: 200px;
   min-height: 300px;
@@ -37,7 +36,7 @@
 .cards__item__description {
   font-family: "Lexend Deca";
   font-weight: 400;
-  font-size: 15px;
+  font-size: 14px;
   color: hsla(0, 0%, 100%, 0.75); /*transparent white*/
   line-height: 1.6;
   padding-bottom: 50px;
@@ -52,8 +51,8 @@
   border: 2px solid hsl(0, 0%, 95%);
   background-color: hsl(0, 0%, 95%);
   border-radius: 50px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
   color: hsl(0, 0%, 20%);
@@ -81,6 +80,32 @@
   color: hsl(0, 0%, 95%);
 }
 
+@media (max-width: 375px) {
+  .cards {
+    flex-direction: column;
+    padding: 25px;
+  }
+  .cards__item {
+    max-width: 100%;
+    min-height: 325px;
+  }
+  .cards__item--sedans {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+  .cards__item--luxury {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .cards__item__button {
+    margin-top: 20px;
+  }
+  .cards__item__description {
+    padding: 0;
+  }
+}
 .attribution a {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   color: rgb(191, 0, 255);
