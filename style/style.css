@@ -1,13 +1,16 @@
 .cards {
   display: flex;
-  overflow: hidden; /*so the cards connect nicely*/
+  justify-content: center;
+  align-items: center;
+  padding: 165px;
 }
 .cards__item {
   background-color: white;
   padding: 40px;
   flex-grow: 1;
   width: 100px;
-  min-height: 500px;
+  min-height: 400px;
+  /*button styling :D*/
 }
 .cards__item--sedans {
   background-color: hsl(31, 77%, 52%); /*orange background*/
@@ -19,14 +22,22 @@
 }
 .cards__item--luxury {
   background-color: hsl(179, 100%, 13%); /*very dark cyan background*/
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px; /*to curve the top right corner*/
+  border-bottom-right-radius: 10px; /*to curve the bottom right corner*/
 }
 .cards__item__title {
   font-family: "Big Shoulders Display";
+  font-weight: 700;
   color: hsl(0, 0%, 95%); /*very light grey*/
+  text-transform: uppercase;
 }
 .cards__item__description {
   font-family: "Lexend Deca";
+  font-weight: 400;
   color: hsla(0, 0%, 100%, 0.75); /*transparent white*/
+}
+.cards__item__button {
+  display: inline-block;
+  margin-top: 20px;
+  font-family: "Lexend Deca";
 }/*# sourceMappingURL=style.css.map */
