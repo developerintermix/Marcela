@@ -39,7 +39,7 @@
   font-size: 14px;
   color: hsla(0, 0%, 100%, 0.75); /*transparent white*/
   line-height: 1.6;
-  padding-bottom: 50px;
+  padding-bottom: 35px;
 }
 .cards__item__button {
   display: inline-block;
@@ -87,7 +87,7 @@
   }
   .cards__item {
     max-width: 100%;
-    min-height: 325px;
+    min-height: 320px;
   }
   .cards__item--sedans {
     border-top-left-radius: 10px;
