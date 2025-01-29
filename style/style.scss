@@ -1,0 +1,38 @@
+.cards{
+    display: flex;
+    overflow: hidden; /*so the cards connect nicely*/
+
+    &__item{
+        background-color: white;
+        padding: 40px;
+        flex-grow: 1;
+        width: 100px;
+        min-height: 500px;
+
+        &--sedans{
+            background-color: hsl(31, 77%, 52%); /*orange background*/
+            border-top-left-radius: 10px; /*to curve the top left corner*/
+            border-bottom-left-radius: 10px; /*to curve the bottom left corner*/
+        }
+    
+        &--suvs{
+            background-color: hsl(184, 100%, 22%); /*dark cyan background*/
+        }
+    
+        &--luxury{
+            background-color: hsl(179, 100%, 13%); /*very dark cyan background*/
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    
+        &__title{
+            font-family: 'Big Shoulders Display';
+            color: hsl(0, 0%, 95%); /*very light grey*/
+        }
+    
+        &__description{
+            font-family: 'Lexend Deca';
+            color: hsla(0, 0%, 100%, 0.75); /*transparent white*/
+        }
+    }
+}
