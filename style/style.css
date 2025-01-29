@@ -49,19 +49,45 @@
   font-weight: 400;
   font-size: 15px;
   text-decoration: none;
-  border: 10px solid hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
   background-color: hsl(0, 0%, 95%);
   border-radius: 50px;
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: hsl(0, 0%, 20%);
+}
+.cards__item__button:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
 }
 .cards__item--sedans .cards__item__button {
   color: hsl(31, 77%, 52%);
 }
+.cards__item--sedans .cards__item__button:hover {
+  color: hsl(0, 0%, 95%);
+}
 .cards__item--suvs .cards__item__button {
   color: hsl(184, 100%, 22%);
 }
+.cards__item--suvs .cards__item__button:hover {
+  color: hsl(0, 0%, 95%);
+}
 .cards__item--luxury .cards__item__button {
   color: hsl(179, 100%, 13%);
+}
+.cards__item--luxury .cards__item__button:hover {
+  color: hsl(0, 0%, 95%);
+}
+
+.attribution a {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgb(191, 0, 255);
+  text-decoration: none;
+  font-weight: bold;
+}
+.attribution a:hover {
+  color: rgb(95, 0, 95);
+  font-style: italic;
 }/*# sourceMappingURL=style.css.map */
