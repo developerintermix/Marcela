@@ -1,15 +1,18 @@
 .cards{
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 165px;
+    align-items: stretch;
+    padding: 160px;
 
     &__item{
         background-color: white;
         padding: 40px;
         flex-grow: 1;
-        width: 100px;
-        min-height: 400px;
+        flex: 1 1 200px; /*prevents the card changing size despite screen size*/
+        max-width: 200px;
+        min-height: 300px;
+        align-items: flex-start;
+        text-align: left;
 
         &--sedans{
             background-color: hsl(31, 77%, 52%); /*orange background*/
@@ -37,15 +40,38 @@
         &__description{
             font-family: 'Lexend Deca';
             font-weight: 400;
+            font-size: 15px;
             color: hsla(0, 0%, 100%, 0.75); /*transparent white*/
+            line-height: 1.6;
+            padding-bottom: 50px;
         }
 
         /*button styling :D*/
         &__button{
             display: inline-block;
-            margin-top: 20px;
+            margin-top: 30px;
             font-family: 'Lexend Deca';
+            font-weight: 400;
+            font-size: 15px;
+            text-decoration: none;
+            border: 10px solid hsl(0, 0%, 95%);
+            background-color: hsl(0, 0%, 95%);
+            border-radius: 50px;
+            padding-left: 15px;
+            padding-right: 15px;
+            color: hsl(0, 0%, 20%);
+        }
 
+        &--sedans &__button{
+            color: hsl(31, 77%, 52%);
+        }
+
+        &--suvs &__button{
+            color: hsl(184, 100%, 22%);
+        }
+
+        &--luxury &__button{
+            color: hsl(179, 100%, 13%);
         }
     }
 }
